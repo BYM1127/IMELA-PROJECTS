@@ -120,18 +120,20 @@
 
 .footer-brand .brand-logo-link {
   display: flex;
-  height: 100px;
+  height: 80px;
   width: 300px;
-  overflow: hidden;
+  position: relative;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 1rem;
 }
 
 .footer-brand .brand-logo {
-  height: 400px;
+  position: absolute;
+  height: 450px;
   width: auto;
   object-fit: contain;
   mix-blend-mode: screen;
-  transform: translateX(-20px);
+  pointer-events: none;
+  left: -40px;
 }

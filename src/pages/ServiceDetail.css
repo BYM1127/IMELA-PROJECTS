@@ -27,15 +27,17 @@
   justify-content: flex-start;
   height: 60px;
   width: 200px;
-  overflow: hidden;
+  position: relative;
 }
 
 .brand-logo {
+  position: absolute;
   height: 250px;
   width: auto;
   object-fit: contain;
   mix-blend-mode: screen;
-  transform: translateX(-15px);
+  pointer-events: none;
+  left: -25px;
 }
 
 .sidebar-subtitle {

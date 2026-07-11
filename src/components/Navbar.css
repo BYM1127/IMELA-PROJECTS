@@ -50,16 +50,18 @@
   align-items: center;
   justify-content: flex-start;
   height: var(--nav-height);
-  width: 250px;
-  overflow: hidden; /* Crops the black padding of the jpeg */
+  width: 280px;
+  position: relative;
 }
 
 .brand-logo {
-  height: 350px; /* Massively scale up the image to remove padding */
+  position: absolute;
+  height: 350px;
   width: auto;
   object-fit: contain;
-  mix-blend-mode: screen; /* Magically removes the black background! */
-  transform: translateX(-20px); /* Adjust if the logo is off-center in the jpeg */
+  mix-blend-mode: screen;
+  pointer-events: none;
+  left: -40px; /* Shift left to offset any empty padding in the image */
 }
 
 .nav-links {
