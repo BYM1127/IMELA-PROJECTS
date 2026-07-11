@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
-import { House, FolderOpen, FileText, Certificate, Question, ArrowLeft } from '@phosphor-icons/react';
+import { House, FolderOpen, FileText, Certificate, Question, ArrowLeft, CheckCircle, Lightning, Fan, WarningCircle } from '@phosphor-icons/react';
+import Logo from '../components/Logo';
 import './ServiceDetail.css';
 
 const ServiceDetail = () => {
   return (
-    <div className="service-detail-layout animate-fade-in">
+    <div className="page animate-fade-in service-detail-layout bg-offwhite">
       {/* Sidebar */}
       <aside className="sidebar bg-navy">
         <div className="sidebar-brand">
           <Link to="/" className="brand-logo-link" style={{display: 'inline-block'}}>
-            <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="brand-logo" />
+            <Logo style={{ transform: 'scale(0.6)', transformOrigin: 'left center' }} />
           </Link>
           <p className="sidebar-subtitle">Precision Engineering</p>
         </div>

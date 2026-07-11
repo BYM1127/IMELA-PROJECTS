@@ -8,16 +8,13 @@ const Footer = () => {
       {/* Top Banner: Certifications */}
       <div className="footer-certifications">
         <div className="container cert-container">
-          <div className="cert-status">
-            <span className="text-primary" style={{fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.1em'}}>VERIFIED COMPLIANCE</span>
-            <br/>
-            <span style={{fontSize: '0.8rem', opacity: 0.8}}>SYS_STATUS: ACCREDITED</span>
-          </div>
           <div className="cert-logos">
-            <div className="cert-logo"><Lightning size={20} /> Wireman's License</div>
-            <div className="cert-logo"><ShieldCheck size={20} /> ISO 9001</div>
-            <div className="cert-logo"><Wrench size={20} /> CIDB Registered</div>
-            <div className="cert-logo"><Certificate size={20} /> ECSA Approved</div>
+            <div className="cert-logo"><ShieldCheck size={20} className="text-primary"/> ISO 9001 Certified</div>
+            <div className="cert-logo"><Certificate size={20} className="text-primary"/> CIDB Registered</div>
+            <div className="cert-logo"><Wrench size={20} className="text-primary"/> ECSA Engineers</div>
+          </div>
+          <div className="system-status">
+            <div className="pulse-dot"></div> SECURE INFRASTRUCTURE
           </div>
         </div>
       </div>
@@ -27,7 +24,7 @@ const Footer = () => {
         <div className="container footer-grid">
           <div className="footer-brand">
             <Link to="/" className="brand-logo-link" style={{marginBottom: '1rem', display: 'inline-block'}}>
-              <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="brand-logo" />
+              <Logo style={{ transform: 'scale(0.9)', transformOrigin: 'left center' }} />
             </Link>
             <p className="footer-desc">
               Precision Engineering & Infrastructure.

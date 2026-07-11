@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { List, X, CaretDown, Phone, Envelope } from '@phosphor-icons/react';
+import Logo from './Logo';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -33,7 +34,7 @@ const Navbar = () => {
       <header className="navbar bg-navy">
         <div className="container nav-container">
           <Link to="/" className="brand-logo-link" onClick={closeMenu}>
-            <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="brand-logo" />
+            <Logo style={{ transform: 'scale(0.7)', transformOrigin: 'left center' }} />
           </Link>
           
           <nav className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
