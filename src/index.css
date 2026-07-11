@@ -2,14 +2,14 @@
 
 :root {
   /* Colors */
-  --clr-bg-navy: #111A24;
-  --clr-bg-navy-light: #1A2634;
+  --clr-bg-navy: #0B1118; /* Darker navy for better contrast with bright logo */
+  --clr-bg-navy-light: #16202D;
   --clr-bg-white: #FFFFFF;
   --clr-bg-offwhite: #F8F9FA;
   
-  --clr-primary: #007A4D; /* Industrial Green */
-  --clr-primary-hover: #00965E;
-  --clr-accent: #007A4D;
+  --clr-primary: #17C717; /* Bright Green from Logo */
+  --clr-primary-hover: #13A413;
+  --clr-accent: #FFCC00; /* Yellow from Logo */
   
   --clr-text-light: #FFFFFF;
   --clr-text-muted: #94A3B8;

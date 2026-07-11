@@ -21,6 +21,17 @@
   border-bottom: 1px solid var(--clr-border);
 }
 
+.brand-logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 .sidebar-subtitle {
   font-size: 0.65rem;
   letter-spacing: 0.1em;

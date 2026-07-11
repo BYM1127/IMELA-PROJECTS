@@ -26,8 +26,8 @@ const Footer = () => {
       <div className="footer-main">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <Link to="/" className="logo-text" style={{marginBottom: '1rem'}}>
-              <strong>IMELA</strong> Projects
+            <Link to="/" className="brand-logo-link" style={{marginBottom: '1rem', display: 'inline-block'}}>
+              <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="brand-logo" />
             </Link>
             <p className="footer-desc">
               Precision Engineering & Infrastructure.

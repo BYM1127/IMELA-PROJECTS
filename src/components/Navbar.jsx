@@ -32,8 +32,8 @@ const Navbar = () => {
 
       <header className="navbar bg-navy">
         <div className="container nav-container">
-          <Link to="/" className="logo-text" onClick={closeMenu}>
-            <strong>IMELA</strong> Projects
+          <Link to="/" className="brand-logo-link" onClick={closeMenu}>
+            <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="brand-logo" />
           </Link>
           
           <nav className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>

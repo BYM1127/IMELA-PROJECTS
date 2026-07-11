@@ -45,18 +45,15 @@
   align-items: center;
 }
 
-.logo-text {
-  font-size: 1.5rem;
-  letter-spacing: -0.03em;
-  color: var(--clr-text-light);
+.brand-logo-link {
   display: flex;
   align-items: center;
-  gap: 0.2rem;
 }
 
-.logo-text strong {
-  font-weight: 800;
-  text-transform: uppercase;
+.brand-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {

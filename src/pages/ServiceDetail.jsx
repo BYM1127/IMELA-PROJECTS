@@ -8,8 +8,8 @@ const ServiceDetail = () => {
       {/* Sidebar */}
       <aside className="sidebar bg-navy">
         <div className="sidebar-brand">
-          <Link to="/" className="logo-text">
-            <strong>IMELA</strong> Projects
+          <Link to="/" className="brand-logo-link" style={{display: 'inline-block'}}>
+            <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="brand-logo" />
           </Link>
           <p className="sidebar-subtitle">Precision Engineering</p>
         </div>
