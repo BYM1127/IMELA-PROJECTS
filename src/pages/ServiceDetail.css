@@ -24,12 +24,18 @@
 .brand-logo-link {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  height: 60px;
+  width: 200px;
+  overflow: hidden;
 }
 
 .brand-logo {
-  height: 65px;
+  height: 250px;
   width: auto;
   object-fit: contain;
+  mix-blend-mode: screen;
+  transform: translateX(-15px);
 }
 
 .sidebar-subtitle {

@@ -48,12 +48,18 @@
 .brand-logo-link {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  height: var(--nav-height);
+  width: 250px;
+  overflow: hidden; /* Crops the black padding of the jpeg */
 }
 
 .brand-logo {
-  height: 75px;
+  height: 350px; /* Massively scale up the image to remove padding */
   width: auto;
   object-fit: contain;
+  mix-blend-mode: screen; /* Magically removes the black background! */
+  transform: translateX(-20px); /* Adjust if the logo is off-center in the jpeg */
 }
 
 .nav-links {
