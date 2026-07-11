@@ -1,105 +1,77 @@
-import { Lightning, WifiHigh, Camera, BatteryCharging, ShieldCheck } from '@phosphor-icons/react';
+import { Link } from 'react-router-dom';
+import { ShieldPlus, Crosshair, ShieldCheck } from '@phosphor-icons/react';
 import './About.css';
 
 const About = () => {
-  const servicesData = [
-    {
-      id: 1,
-      title: "Electrical Installation & Maintenance",
-      description: "From new building wiring to routine maintenance of existing systems, our certified electricians ensure your property is safe and up to code.",
-      icon: <Lightning size={48} className="text-primary" weight="light" />
-    },
-    {
-      id: 2,
-      title: "Network/Data Installation",
-      description: "Structured cabling and robust network setups for seamless connectivity in commercial spaces and modern homes.",
-      icon: <WifiHigh size={48} className="text-primary" weight="light" />
-    },
-    {
-      id: 3,
-      title: "Access Point & Camera Installation",
-      description: "Enhance your security with professional installation of CCTV cameras and access control systems.",
-      icon: <Camera size={48} className="text-primary" weight="light" />
-    },
-    {
-      id: 4,
-      title: "Backup Power Solutions",
-      description: "Uninterruptible power supplies (UPS), generators, and solar integrations to keep your operations running during outages.",
-      icon: <BatteryCharging size={48} className="text-primary" weight="light" />
-    },
-    {
-      id: 5,
-      title: "Earthing & Compliance",
-      description: "Ensuring all electrical systems meet regulatory safety standards through proper earthing and compliance checks.",
-      icon: <ShieldCheck size={48} className="text-primary" weight="light" />
-    }
-  ];
-
   return (
     <div className="page animate-fade-in">
-      <section className="page-header">
-        <div className="container text-center">
-          <h1 className="hero-title">About & Services</h1>
-          <p className="hero-subtitle" style={{ margin: '0 auto' }}>Where Expertise Meets Efficiency</p>
+      {/* Page Header */}
+      <section className="about-hero bg-navy">
+        <div className="container">
+          <div className="breadcrumb">
+            <Link to="/">Home</Link> &gt; <span>About</span>
+          </div>
+          <h1 className="hero-title">About Imela Projects</h1>
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="section bg-card">
-        <div className="container">
-          <div className="about-grid">
-            <div className="about-image">
-              <img src="/portfolio/proj-5.jpeg" alt="Imela Projects team at work" style={{width: '100%', borderRadius: 'var(--border-radius)'}} />
-            </div>
-            <div className="about-content">
-              <h2 className="section-title">Speed and Precision.</h2>
-              <p style={{fontSize: '1.1rem', color: 'var(--clr-text-muted)', marginBottom: '1rem'}}>
-                Imela Projects specializes in resolving all electrical and data-related issues with speed and precision. 
-              </p>
-              <p style={{fontSize: '1.1rem', color: 'var(--clr-text-muted)', marginBottom: '2rem'}}>
-                Our team of highly skilled and certified technicians is committed to delivering reliable, efficient solutions for all your electrical, solar, network, and data needs.
-              </p>
-              
-              <div style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
-                <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                  <div style={{background: 'rgba(255,255,255,0.05)', padding: '0.8rem', borderRadius: '50%'}}>✓</div>
-                  <h4>Fast, reliable service</h4>
-                </div>
-                <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                  <div style={{background: 'rgba(255,255,255,0.05)', padding: '0.8rem', borderRadius: '50%'}}>✓</div>
-                  <h4>Certified professionals</h4>
-                </div>
-                <div style={{display: 'flex', alignItems: 'center', gap: '1rem'}}>
-                  <div style={{background: 'rgba(255,255,255,0.05)', padding: '0.8rem', borderRadius: '50%'}}>✓</div>
-                  <h4>End-to-end solutions</h4>
-                </div>
-              </div>
-            </div>
+      {/* Our Story Section */}
+      <section className="section bg-white">
+        <div className="container story-section">
+          <div className="story-content">
+            <h4 className="text-primary" style={{display: 'flex', alignItems: 'center', gap: '1rem', borderBottom: '1px solid var(--clr-border-dark)', paddingBottom: '0.5rem', display: 'inline-flex'}}>
+              OUR STORY
+            </h4>
+            <h2 className="section-title mt-sm">
+              Building Midrand's Industrial Future, One Precision Project at a Time.
+            </h2>
+            <p className="mt-md" style={{fontSize: '1.05rem', color: 'var(--clr-text-dark-muted)'}}>
+              Founded on the principles of absolute stability and technical excellence, Imela Projects has grown from a specialized local contractor into a cornerstone of commercial infrastructure in Gauteng.
+            </p>
+            <p style={{fontSize: '1.05rem', color: 'var(--clr-text-dark-muted)'}}>
+              Our journey is defined by a rigid adherence to compliance and a commitment to engineered solutions over temporary fixes. We partner with commercial developers and government entities who demand flawless execution and unyielding reliability in every structural blueprint we bring to life.
+            </p>
+          </div>
+          <div className="story-image-wrapper">
+            <img src="/portfolio/proj-5.jpeg" alt="Industrial Construction" className="img-industrial grayscale" />
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="section" id="services">
+      {/* Pillars of Excellence */}
+      <section className="section bg-offwhite">
         <div className="container">
-          <div className="text-center" style={{marginBottom: 'var(--space-lg)'}}>
-            <h4 className="text-primary">Our Expertise</h4>
-            <h2 className="section-title center">Comprehensive Solutions!</h2>
+          <div className="pillars-header">
+            <div className="vertical-line"></div>
+            <div>
+              <h2 className="section-title" style={{margin: 0}}>Pillars of Excellence</h2>
+              <p className="mt-sm" style={{color: 'var(--clr-text-dark-muted)', maxWidth: '600px'}}>
+                Our operational framework is supported by three non-negotiable standards, ensuring every project meets strict engineering tolerances.
+              </p>
+            </div>
           </div>
-          <div className="services-list">
-            {servicesData.map(service => (
-              <div key={service.id} className="service-detail-card card">
-                <div className="service-icon">{service.icon}</div>
-                <div className="service-content">
-                  <h2>{service.title}</h2>
-                  <p>{service.description}</p>
-                </div>
-              </div>
-            ))}
+
+          <div className="pillars-grid mt-lg">
+            <div className="pillar-card card">
+              <ShieldPlus size={40} className="text-primary mb-sm" />
+              <h4>SAFETY FIRST</h4>
+              <p>Uncompromising adherence to OHSA standards. We implement rigid safety protocols on every site, safeguarding human life and project integrity above all else.</p>
+            </div>
+            <div className="pillar-card card center-card">
+              <Crosshair size={40} className="text-primary mb-sm" />
+              <h4>PRECISION ENGINEERING</h4>
+              <p>Executing complex schematics with zero margin for error. Our technical teams utilize utility-first methodologies to ensure absolute structural stability.</p>
+            </div>
+            <div className="pillar-card card">
+              <ShieldCheck size={40} className="text-primary mb-sm" />
+              <h4>LOCAL RELIABILITY</h4>
+              <p>Deeply rooted in Midrand. We provide rapid response times and localized expertise, establishing ourselves as the dependable anchor for regional infrastructure.</p>
+            </div>
           </div>
         </div>
       </section>
     </div>
   );
 };
+
 export default About;

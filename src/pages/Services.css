@@ -1,0 +1,153 @@
+.services-header {
+  padding: var(--space-xl) 0 var(--space-md) 0;
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.services-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(17, 26, 36, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.capabilities-line {
+  height: 4px;
+  background-color: var(--clr-primary);
+  width: 100px;
+  margin-top: var(--space-md);
+}
+
+.capabilities-sub-bar {
+  border-bottom: 1px solid var(--clr-border);
+  padding: var(--space-sm) 0;
+}
+
+.sub-bar-flex {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--clr-primary);
+}
+
+/* Row Styling */
+.service-row {
+  padding: var(--space-xl) 0;
+  position: relative;
+}
+
+.row-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.row-grid-full {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 600px;
+}
+
+.row-image-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.row-content-dark {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.check-list, .check-list-dark {
+  list-style: none;
+}
+
+.check-list li, .check-list-dark li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: var(--space-md);
+}
+
+.check-list h4, .check-list-dark h4 {
+  margin-bottom: 0.25rem;
+}
+
+.check-list p {
+  color: var(--clr-text-dark-muted);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.check-list-dark p {
+  color: var(--clr-text-muted);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Connector Block */
+.connector-block {
+  width: 60px;
+  height: 60px;
+  background-color: var(--clr-primary);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -30px);
+  z-index: 10;
+}
+
+.relative-section {
+  position: relative;
+}
+
+.telemetry-card {
+  position: absolute;
+  bottom: -30px;
+  left: -50px;
+  width: 250px;
+  z-index: 10;
+}
+
+.telemetry-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text-dark-muted);
+}
+
+.telemetry-row strong {
+  color: var(--clr-text-dark);
+}
+
+@media (max-width: 900px) {
+  .row-grid, .row-grid-full {
+    grid-template-columns: 1fr;
+  }
+  .row-content-dark {
+    padding: var(--space-md);
+  }
+  .telemetry-card {
+    left: 10px;
+    bottom: 10px;
+  }
+}
