@@ -1,58 +1,33 @@
-import { useState } from 'react';
-import { ArrowRight } from '@phosphor-icons/react';
 import './Portfolio.css';
 
 const Portfolio = () => {
-  const [activeTab, setActiveTab] = useState('ALL PROJECTS');
-
-  // Since we have 9 images named proj-1 to proj-9, let's just use 6 for the grid to match the mockup
-  const projects = [
-    { id: 1, image: '/portfolio/proj-1.jpeg', category: 'SOLAR & BACKUP' },
-    { id: 2, image: '/portfolio/proj-2.jpeg', category: 'ELECTRICAL RETICULATION' },
-    { id: 3, image: '/portfolio/proj-3.jpeg', category: 'NETWORK CABLING' },
-    { id: 4, image: '/portfolio/proj-4.jpeg', category: 'ELECTRICAL RETICULATION' },
-    { id: 5, image: '/portfolio/proj-5.jpeg', category: 'SOLAR & BACKUP' },
-    { id: 6, image: '/portfolio/proj-6.jpeg', category: 'NETWORK CABLING' }
-  ];
-
-  const filteredProjects = activeTab === 'ALL PROJECTS' 
-    ? projects 
-    : projects.filter(p => p.category === activeTab);
+  // Since we have 9 images named proj-1 to proj-9
+  const projects = Array.from({ length: 9 }, (_, i) => ({
+    id: i + 1,
+    image: `/portfolio/proj-${i + 1}.jpeg`,
+    title: `Project ${i + 1}`
+  }));
 
   return (
-    <div className="page animate-fade-in bg-white" style={{paddingTop: 'var(--space-xl)', paddingBottom: 'var(--space-xl)'}}>
-      <div className="container text-center">
-        <h1 className="hero-title">Our Work in Action</h1>
-        
-        {/* Tabs */}
-        <div className="portfolio-tabs">
-          {['ALL PROJECTS', 'SOLAR & BACKUP', 'ELECTRICAL RETICULATION', 'NETWORK CABLING'].map(tab => (
-            <button 
-              key={tab}
-              className={`tab-btn ${activeTab === tab ? 'active' : ''}`}
-              onClick={() => setActiveTab(tab)}
-            >
-              {tab}
-            </button>
-          ))}
+    <div className="page animate-fade-in">
+      <section className="page-header">
+        <div className="container text-center">
+          <h1 className="hero-title">Our Work</h1>
+          <p className="hero-subtitle" style={{ margin: '0 auto' }}>A showcase of our recent electrical installations and maintenance projects.</p>
         </div>
+      </section>
 
-        {/* Grid */}
-        <div className="portfolio-grid-seamless">
-          {filteredProjects.map((project) => (
-            <div key={project.id} className="portfolio-item-seamless">
-              <img src={project.image} alt={project.category} className="grayscale" />
-              <div className="item-overlay">
-                <span className="item-category">{project.category}</span>
+      <section className="section">
+        <div className="container">
+          <div className="portfolio-gallery">
+            {projects.map((project) => (
+              <div key={project.id} className="portfolio-item">
+                <img src={project.image} alt={project.title} className="portfolio-img" />
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-
-        <button className="btn btn-primary mt-lg">
-          LOAD MORE SPECIFICATIONS <ArrowRight weight="bold" />
-        </button>
-      </div>
+      </section>
     </div>
   );
 };

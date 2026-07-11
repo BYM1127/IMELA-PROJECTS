@@ -1,78 +1,36 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { PhoneCall, List, X } from '@phosphor-icons/react';
 import { useState } from 'react';
-import { List, X, CaretDown, Phone, Envelope } from '@phosphor-icons/react';
-import Logo from './Logo';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const location = useLocation();
-
-  const isActive = (path) => location.pathname === path ? 'active' : '';
-
-  const closeMenu = () => {
-    setIsMobileMenuOpen(false);
-    setIsDropdownOpen(false);
-  };
 
   return (
-    <>
-      {/* Top Contact Strip */}
-      <div className="top-contact-strip bg-navy-light">
-        <div className="container contact-strip-container">
-          <div className="contact-strip-left">
-            <span className="contact-item"><Phone size={14} /> +27 83 602 5980</span>
-            <span className="contact-item"><Envelope size={14} /> engineering@imelaprojects.co.za</span>
-          </div>
-          <div className="contact-strip-right text-primary font-bold">
-            24/7 EMERGENCY RESPONSE AVAILABLE
-          </div>
+    <header className="navbar">
+      <div className="container nav-container">
+        <Link to="/" className="logo">
+          <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="logo-img" />
+        </Link>
+        
+        <nav className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About & Services</Link>
+          <Link to="/portfolio" onClick={() => setIsMobileMenuOpen(false)}>Projects</Link>
+          <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+        </nav>
+
+        <div className="nav-actions">
+          <a href="tel:+27836025980" className="btn btn-primary">
+            <PhoneCall size={20} weight="fill" />
+            <span>+27 83 602 5980</span>
+          </a>
+          <button className="mobile-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
+          </button>
         </div>
       </div>
-
-      <header className="navbar bg-navy">
-        <div className="container nav-container">
-          <Link to="/" className="brand-logo-link" onClick={closeMenu}>
-            <Logo style={{ transform: 'scale(0.7)', transformOrigin: 'left center' }} />
-          </Link>
-          
-          <nav className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-            <Link to="/" className={isActive('/')} onClick={closeMenu}>Home</Link>
-            <Link to="/about" className={isActive('/about')} onClick={closeMenu}>About Us</Link>
-            <Link to="/services" className={isActive('/services')} onClick={closeMenu}>Services</Link>
-            <Link to="/portfolio" className={isActive('/portfolio')} onClick={closeMenu}>Portfolio</Link>
-            <Link to="/contact" className={isActive('/contact')} onClick={closeMenu}>Contact</Link>
-            
-            {/* Dropdown Menu */}
-            <div 
-              className="dropdown"
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
-            >
-              <button className="dropdown-toggle" onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
-                More <CaretDown size={14} />
-              </button>
-              
-              <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-                <Link to="/why-choose-us" className={isActive('/why-choose-us')} onClick={closeMenu}>Why Choose Us</Link>
-                <Link to="/certifications" className={isActive('/certifications')} onClick={closeMenu}>Certifications</Link>
-                <Link to="/blog" className={isActive('/blog')} onClick={closeMenu}>Blog</Link>
-              </div>
-            </div>
-          </nav>
-
-          <div className="nav-actions">
-            <Link to="/contact" className="btn btn-primary" style={{padding: '0.5rem 1.5rem', fontSize: '0.75rem'}}>
-              Get a Free Quote
-            </Link>
-            <button className="mobile-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-              {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
-            </button>
-          </div>
-        </div>
-      </header>
-    </>
+    </header>
   );
 };
 
