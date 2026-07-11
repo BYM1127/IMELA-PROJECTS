@@ -2,12 +2,13 @@
 
 :root {
   /* Colors */
-  --clr-bg-dark: #071520;
-  --clr-bg-card: #0d2130;
-  --clr-bg-lighter: #163044;
+  --clr-bg-dark: #121212;
+  --clr-bg-card: #1E1E1E;
+  --clr-bg-lighter: #2C2C2C;
   
-  --clr-primary: #eaff00; /* Bright Neon Yellow */
-  --clr-primary-hover: #ccdd00;
+  --clr-primary: #00B85C; /* Imela Bright Green */
+  --clr-primary-hover: #00964A;
+  --clr-accent: #E5A900; /* Imela Gold/Yellow */
   
   --clr-text-light: #ffffff;
   --clr-text-muted: #aab6c2;

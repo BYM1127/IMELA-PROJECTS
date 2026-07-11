@@ -29,11 +29,9 @@
   line-height: 1;
 }
 
-.logo-sub {
-  font-size: 0.8rem;
-  font-weight: 400;
-  letter-spacing: 2px;
-  color: var(--clr-text-muted);
+.logo-img {
+  height: 50px;
+  object-fit: contain;
 }
 
 .nav-links {

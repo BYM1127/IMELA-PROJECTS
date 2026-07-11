@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Lightning, PhoneCall, List, X } from '@phosphor-icons/react';
+import { PhoneCall, List, X } from '@phosphor-icons/react';
 import { useState } from 'react';
 import './Navbar.css';
 
@@ -10,8 +10,7 @@ const Navbar = () => {
     <header className="navbar">
       <div className="container nav-container">
         <Link to="/" className="logo">
-          <Lightning size={32} weight="fill" className="text-primary" />
-          <span>Detroit<span className="logo-sub">Electrical</span></span>
+          <img src="/logo/logo-1.jpeg" alt="Imela Projects Logo" className="logo-img" />
         </Link>
         
         <nav className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -23,9 +22,9 @@ const Navbar = () => {
         </nav>
 
         <div className="nav-actions">
-          <a href="tel:+1234567890" className="btn btn-primary">
+          <a href="tel:+27836025980" className="btn btn-primary">
             <PhoneCall size={20} weight="fill" />
-            <span>(800) 123-4567</span>
+            <span>+27 83 602 5980</span>
           </a>
           <button className="mobile-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
