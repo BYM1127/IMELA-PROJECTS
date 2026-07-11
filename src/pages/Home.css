@@ -1,0 +1,31 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(7, 21, 32, 0.8), rgba(7, 21, 32, 0.9)), url('https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80') center/cover;
+  padding: var(--space-xl) 0;
+}
+
+.hero-title {
+  font-size: 4rem;
+  max-width: 800px;
+  margin-bottom: var(--space-md);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--clr-text-muted);
+  max-width: 600px;
+  margin-bottom: var(--space-lg);
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
