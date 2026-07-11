@@ -22,8 +22,7 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/about">About & Services</Link></li>
             <li><Link to="/portfolio">Projects</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>
@@ -32,10 +31,10 @@ const Footer = () => {
         <div className="footer-links">
           <h3>Our Services</h3>
           <ul>
-            <li><Link to="/services">Electrical Installation</Link></li>
-            <li><Link to="/services">Network & Data</Link></li>
-            <li><Link to="/services">Camera Installation</Link></li>
-            <li><Link to="/services">Backup Power (Solar)</Link></li>
+            <li><Link to="/about#services">Electrical Installation</Link></li>
+            <li><Link to="/about#services">Network & Data</Link></li>
+            <li><Link to="/about#services">Camera Installation</Link></li>
+            <li><Link to="/about#services">Backup Power (Solar)</Link></li>
           </ul>
         </div>
 

@@ -12,7 +12,7 @@ const Home = () => {
           <p className="hero-subtitle">Electrical, Solar & Network Installation Solutions for residential and commercial properties in Midrand & Johannesburg.</p>
           <div className="hero-cta">
             <Link to="/contact" className="btn btn-primary">Get a Quote</Link>
-            <Link to="/services" className="btn btn-outline">Our Services</Link>
+            <Link to="/about#services" className="btn btn-outline">Our Services</Link>
           </div>
         </div>
       </section>
@@ -70,25 +70,25 @@ const Home = () => {
             <div className="card service-card">
               <h3 className="card-title">Installation & Maintenance</h3>
               <p>Full spectrum electrical installations and routine maintenance for optimal safety.</p>
-              <Link to="/services" className="card-link">Learn More <ArrowRight /></Link>
+              <Link to="/about#services" className="card-link">Learn More <ArrowRight /></Link>
             </div>
 
             <div className="card service-card">
               <h3 className="card-title">Network & Data</h3>
               <p>Structured cabling, network setups, and seamless data installation services.</p>
-              <Link to="/services" className="card-link">Learn More <ArrowRight /></Link>
+              <Link to="/about#services" className="card-link">Learn More <ArrowRight /></Link>
             </div>
 
             <div className="card service-card">
               <h3 className="card-title">Access & Cameras</h3>
               <p>Security camera installations and access point configurations for your peace of mind.</p>
-              <Link to="/services" className="card-link">Learn More <ArrowRight /></Link>
+              <Link to="/about#services" className="card-link">Learn More <ArrowRight /></Link>
             </div>
 
             <div className="card service-card">
               <h3 className="card-title">Earthing & Compliance</h3>
               <p>Professional earthing solutions ensuring strict adherence to compliance standards.</p>
-              <Link to="/services" className="card-link">Learn More <ArrowRight /></Link>
+              <Link to="/about#services" className="card-link">Learn More <ArrowRight /></Link>
             </div>
 
           </div>
