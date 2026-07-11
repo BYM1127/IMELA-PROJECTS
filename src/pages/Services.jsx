@@ -20,40 +20,38 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Service 1: Electrical */}
+      {/* Service 1: Electrical Installation & Maintenance */}
       <section className="service-row bg-white">
         <div className="container row-grid">
           <div className="row-content">
-            <h2 className="section-title">ELECTRICAL INSTALLATION & COMPLIANCE</h2>
+            <h2 className="section-title">ELECTRICAL INSTALLATION & MAINTENANCE</h2>
             <p className="mt-sm mb-md">
-              Precision-engineered electrical infrastructure designed for high-demand industrial and commercial environments, ensuring absolute reliability and strict regulatory adherence.
+              Precision-engineered electrical infrastructure designed for high-demand environments. We handle complete reticulation, DB board upgrades, and ongoing preventative maintenance.
             </p>
             <ul className="check-list mb-lg">
               <li>
                 <CheckSquareOffset size={20} className="text-primary" />
                 <div>
                   <h4>HIGH VOLTAGE SYSTEMS</h4>
-                  <p>Design, installation, and maintenance of robust high-voltage distribution networks.</p>
+                  <p>Design and installation of robust distribution networks.</p>
                 </div>
               </li>
               <li>
                 <CheckSquareOffset size={20} className="text-primary" />
                 <div>
-                  <h4>NEN 1010 INSPECTIONS</h4>
-                  <p>Rigorous compliance testing and certification for absolute safety guarantees.</p>
-                </div>
-              </li>
-              <li>
-                <CheckSquareOffset size={20} className="text-primary" />
-                <div>
-                  <h4>INDUSTRIAL LIGHTING CONTROL</h4>
-                  <p>Automated, energy-efficient lighting solutions for vast manufacturing spaces.</p>
+                  <h4>PREVENTATIVE MAINTENANCE</h4>
+                  <p>Scheduled diagnostics to prevent catastrophic failure.</p>
                 </div>
               </li>
             </ul>
-            <Link to="/services/detail" className="btn btn-outline-dark" style={{backgroundColor: 'var(--clr-bg-navy)', color: 'white'}}>
-              VIEW SPECIFICATIONS <ArrowRight weight="bold" />
-            </Link>
+            <div className="btn-group">
+              <Link to="/services/detail" className="btn btn-outline-dark" style={{backgroundColor: 'var(--clr-bg-navy)', color: 'white'}}>
+                VIEW SPECIFICATIONS
+              </Link>
+              <a href="https://wa.me/27836025980" className="btn btn-primary" target="_blank" rel="noreferrer">
+                REQUEST QUOTE
+              </a>
+            </div>
           </div>
           <div className="row-image">
             <img src="/portfolio/proj-8.jpeg" alt="Electrical DB Board" className="img-industrial grayscale" />
@@ -61,108 +59,170 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Green Connector Block */}
       <div className="connector-block"></div>
 
-      {/* Service 2: Solar */}
-      <section className="service-row bg-offwhite" style={{padding: 0}}>
-        <div className="row-grid-full">
-          <div className="row-image-left">
-            <img src="/portfolio/proj-1.jpeg" alt="Commercial Solar Farm" className="grayscale" />
-          </div>
-          <div className="row-content-dark bg-navy">
-            <h2 className="section-title text-light">RENEWABLE ENERGY & BACKUP SOLUTIONS</h2>
-            <p className="mt-sm mb-md text-muted">
-              Future-proofing infrastructure with high-capacity solar integration and redundant power systems to guarantee zero downtime in critical operations.
-            </p>
-            <ul className="check-list-dark mb-lg">
-              <li>
-                <CheckSquareOffset size={20} className="text-primary" />
-                <div>
-                  <h4>COMMERCIAL SOLAR ARRAYS</h4>
-                  <p>Large-scale photovoltaic deployments engineered for maximum yield.</p>
-                </div>
-              </li>
-              <li>
-                <CheckSquareOffset size={20} className="text-primary" />
-                <div>
-                  <h4>UPS & BATTERY STORAGE</h4>
-                  <p>Uninterruptible power supplies designed for seamless transition during grid failure.</p>
-                </div>
-              </li>
-              <li>
-                <CheckSquareOffset size={20} className="text-primary" />
-                <div>
-                  <h4>GRID SYNCHRONIZATION</h4>
-                  <p>Advanced telemetry for intelligent energy routing and load balancing.</p>
-                </div>
-              </li>
-            </ul>
-            <Link to="/contact" className="btn btn-primary">
-              CONSULT ENGINEERING <ArrowRight weight="bold" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Service 3: Network/CCTV */}
-      <section className="service-row bg-white relative-section">
+      {/* Service 2: Network/Data Installation */}
+      <section className="service-row bg-offwhite">
         <div className="container row-grid">
+          <div className="row-image">
+            <img src="/portfolio/proj-3.jpeg" alt="Network Server Rack" className="img-industrial grayscale" style={{boxShadow: '12px 12px 0px var(--clr-bg-navy)'}} />
+          </div>
           <div className="row-content">
-            <h2 className="section-title">NETWORK CABLING & CCTV AUTOMATION</h2>
+            <h2 className="section-title">NETWORK/DATA INSTALLATION</h2>
             <p className="mt-sm mb-md">
-              Establishing the vital nervous system for modern facilities through structured cabling and integrated, intelligent security protocols.
+              Establishing the vital nervous system for modern facilities through structured fiber optic and copper cabling, ensuring high-bandwidth and low-latency data flow.
             </p>
             <ul className="check-list mb-lg">
               <li>
                 <CheckSquareOffset size={20} className="text-primary" />
                 <div>
-                  <h4>STRUCTURED FIBER NETWORKS</h4>
-                  <p>High-bandwidth, low-latency fiber optic backbones for enterprise data.</p>
-                </div>
-              </li>
-              <li>
-                <CheckSquareOffset size={20} className="text-primary" />
-                <div>
-                  <h4>IP CCTV & ACCESS CONTROL</h4>
-                  <p>Unified security ecosystems with automated threat response mechanisms.</p>
+                  <h4>STRUCTURED CABLING</h4>
+                  <p>Enterprise-grade CAT6 and Fiber installations.</p>
                 </div>
               </li>
               <li>
                 <CheckSquareOffset size={20} className="text-primary" />
                 <div>
                   <h4>SERVER ROOM ARCHITECTURE</h4>
-                  <p>Climate-controlled, meticulously organized racks engineered for expansion.</p>
+                  <p>Climate-controlled, meticulously organized racks.</p>
                 </div>
               </li>
             </ul>
-            <Link to="/services/detail" className="btn btn-outline-dark" style={{backgroundColor: 'var(--clr-bg-navy)', color: 'white'}}>
-              REVIEW PROTOCOLS <ArrowRight weight="bold" />
-            </Link>
-          </div>
-          <div className="row-image">
-            <img src="/portfolio/proj-3.jpeg" alt="Server Rack Infrastructure" className="img-industrial grayscale" />
-            {/* Overlay Telemetry Card */}
-            <div className="telemetry-card card">
-              <h4 className="text-primary" style={{borderBottom: '1px solid var(--clr-border-dark)', paddingBottom: '0.5rem', marginBottom: '1rem', display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
-                <div className="pulse-dot"></div> SYSTEM TELEMETRY
-              </h4>
-              <div className="telemetry-row">
-                <span>Throughput:</span>
-                <strong>100 Gbps</strong>
-              </div>
-              <div className="telemetry-row">
-                <span>Latency:</span>
-                <strong>&lt; 1ms</strong>
-              </div>
-              <div className="telemetry-row">
-                <span>Status:</span>
-                <strong className="text-primary">Optimal</strong>
-              </div>
+            <div className="btn-group">
+              <Link to="/services/detail" className="btn btn-outline-dark" style={{backgroundColor: 'var(--clr-bg-navy)', color: 'white'}}>
+                VIEW SPECIFICATIONS
+              </Link>
+              <a href="https://wa.me/27836025980" className="btn btn-primary" target="_blank" rel="noreferrer">
+                REQUEST QUOTE
+              </a>
             </div>
           </div>
         </div>
       </section>
+
+      <div className="connector-block"></div>
+
+      {/* Service 3: Access Point & Camera Installation */}
+      <section className="service-row bg-white">
+        <div className="container row-grid">
+          <div className="row-content">
+            <h2 className="section-title">ACCESS POINT & CAMERA INSTALLATION</h2>
+            <p className="mt-sm mb-md">
+              Integrated security ecosystems featuring high-resolution IP CCTV, biometric access control, and comprehensive wireless network expansion.
+            </p>
+            <ul className="check-list mb-lg">
+              <li>
+                <CheckSquareOffset size={20} className="text-primary" />
+                <div>
+                  <h4>IP CCTV NETWORKS</h4>
+                  <p>High-definition surveillance with centralized monitoring.</p>
+                </div>
+              </li>
+              <li>
+                <CheckSquareOffset size={20} className="text-primary" />
+                <div>
+                  <h4>BIOMETRIC ACCESS</h4>
+                  <p>Secure physical entry points with automated logs.</p>
+                </div>
+              </li>
+            </ul>
+            <div className="btn-group">
+              <Link to="/services/detail" className="btn btn-outline-dark" style={{backgroundColor: 'var(--clr-bg-navy)', color: 'white'}}>
+                VIEW SPECIFICATIONS
+              </Link>
+              <a href="https://wa.me/27836025980" className="btn btn-primary" target="_blank" rel="noreferrer">
+                REQUEST QUOTE
+              </a>
+            </div>
+          </div>
+          <div className="row-image">
+            <img src="/portfolio/proj-4.jpeg" alt="Security Cameras" className="img-industrial grayscale" />
+          </div>
+        </div>
+      </section>
+
+      <div className="connector-block"></div>
+
+      {/* Service 4: Backup Power Solutions */}
+      <section className="service-row bg-offwhite">
+        <div className="container row-grid">
+          <div className="row-image">
+            <img src="/portfolio/proj-1.jpeg" alt="Solar and Inverters" className="img-industrial grayscale" style={{boxShadow: '12px 12px 0px var(--clr-bg-navy)'}} />
+          </div>
+          <div className="row-content">
+            <h2 className="section-title">BACKUP POWER SOLUTIONS</h2>
+            <p className="mt-sm mb-md">
+              Future-proofing infrastructure with high-capacity solar integration, UPS systems, and redundant generators to guarantee zero downtime.
+            </p>
+            <ul className="check-list mb-lg">
+              <li>
+                <CheckSquareOffset size={20} className="text-primary" />
+                <div>
+                  <h4>COMMERCIAL SOLAR</h4>
+                  <p>Large-scale photovoltaic deployments engineered for yield.</p>
+                </div>
+              </li>
+              <li>
+                <CheckSquareOffset size={20} className="text-primary" />
+                <div>
+                  <h4>UPS & INVERTERS</h4>
+                  <p>Seamless transition during grid failure.</p>
+                </div>
+              </li>
+            </ul>
+            <div className="btn-group">
+              <Link to="/services/detail" className="btn btn-outline-dark" style={{backgroundColor: 'var(--clr-bg-navy)', color: 'white'}}>
+                VIEW SPECIFICATIONS
+              </Link>
+              <a href="https://wa.me/27836025980" className="btn btn-primary" target="_blank" rel="noreferrer">
+                REQUEST QUOTE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="connector-block"></div>
+
+      {/* Service 5: Earthing & Compliance */}
+      <section className="service-row bg-white">
+        <div className="container row-grid">
+          <div className="row-content">
+            <h2 className="section-title">EARTHING & COMPLIANCE</h2>
+            <p className="mt-sm mb-md">
+              Protecting your infrastructure from power surges and lightning strikes while ensuring every installation meets mandatory safety and compliance regulations.
+            </p>
+            <ul className="check-list mb-lg">
+              <li>
+                <CheckSquareOffset size={20} className="text-primary" />
+                <div>
+                  <h4>EARTHING SYSTEMS</h4>
+                  <p>Deep earth spiking and lightning protection networks.</p>
+                </div>
+              </li>
+              <li>
+                <CheckSquareOffset size={20} className="text-primary" />
+                <div>
+                  <h4>COC ISSUANCE</h4>
+                  <p>Rigorous inspection and official Certificates of Compliance.</p>
+                </div>
+              </li>
+            </ul>
+            <div className="btn-group">
+              <Link to="/services/detail" className="btn btn-outline-dark" style={{backgroundColor: 'var(--clr-bg-navy)', color: 'white'}}>
+                VIEW SPECIFICATIONS
+              </Link>
+              <a href="https://wa.me/27836025980" className="btn btn-primary" target="_blank" rel="noreferrer">
+                REQUEST QUOTE
+              </a>
+            </div>
+          </div>
+          <div className="row-image">
+            <img src="/portfolio/proj-5.jpeg" alt="Earthing systems" className="img-industrial grayscale" />
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };

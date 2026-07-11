@@ -11,6 +11,7 @@ const WhatsAppButton = () => {
       aria-label="Chat on WhatsApp"
     >
       <WhatsappLogo size={32} weight="fill" />
+      <span className="whatsapp-tooltip">Chat with Engineering</span>
     </a>
   );
 };
