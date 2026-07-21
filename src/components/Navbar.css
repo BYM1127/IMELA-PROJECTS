@@ -57,6 +57,10 @@
   transition: width 0.3s ease;
 }
 
+.nav-social-icon:hover {
+  color: var(--clr-primary) !important;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { PhoneCall, List, X, Moon, Sun } from '@phosphor-icons/react';
+import { List, X, Moon, Sun, InstagramLogo, FacebookLogo, WhatsappLogo } from '@phosphor-icons/react';
 import { useState, useEffect } from 'react';
 import './Navbar.css';
 
@@ -50,10 +50,17 @@ const Navbar = () => {
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Theme">
             {isDarkMode ? <Sun size={24} weight="fill" color="var(--clr-text-dark)" /> : <Moon size={24} weight="fill" color="var(--clr-text-dark)" />}
           </button>
-          <a href="tel:+27836025980" className="btn btn-primary">
-            <PhoneCall size={20} weight="fill" />
-            <span>+27 83 602 5980</span>
-          </a>
+          <div className="social-nav-icons" style={{ display: 'flex', gap: '0.8rem', alignItems: 'center', marginLeft: '1rem' }}>
+            <a href="https://www.instagram.com/imelaprojects" target="_blank" rel="noreferrer" aria-label="Instagram" style={{ color: 'var(--clr-text-dark)', transition: 'color 0.3s' }} className="nav-social-icon">
+              <InstagramLogo size={28} weight="regular" />
+            </a>
+            <a href="https://www.facebook.com/imelaconstruction" target="_blank" rel="noreferrer" aria-label="Facebook" style={{ color: 'var(--clr-text-dark)', transition: 'color 0.3s' }} className="nav-social-icon">
+              <FacebookLogo size={28} weight="regular" />
+            </a>
+            <a href="https://wa.me/27836025980" target="_blank" rel="noreferrer" aria-label="WhatsApp" style={{ color: 'var(--clr-text-dark)', transition: 'color 0.3s' }} className="nav-social-icon">
+              <WhatsappLogo size={28} weight="regular" />
+            </a>
+          </div>
           <button className="mobile-toggle" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
           </button>
