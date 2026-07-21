@@ -26,14 +26,14 @@ const Services = () => {
       title: "Access Point & Camera Installation",
       description: "Enhance your security with professional installation of CCTV cameras and access control systems. We strategically place wireless access points and high-definition cameras to eliminate dead zones and secure your premises 24/7.",
       icon: <Camera size={48} className="text-primary" weight="light" />,
-      image: "/portfolio/proj-1.jpeg"
+      image: "/portfolio/camera-installation.jpg"
     },
     {
       id: 4,
       title: "Backup Power Solutions",
       description: "Uninterruptible power supplies (UPS), generators, and solar integrations to keep your operations running during outages. We design bespoke backup solutions that guarantee peace of mind during load shedding or unexpected grid failures.",
       icon: <BatteryCharging size={48} className="text-primary" weight="light" />,
-      image: "/portfolio/proj-3.jpeg"
+      image: "/portfolio/backup-power.png"
     },
     {
       id: 5,

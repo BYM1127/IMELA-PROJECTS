@@ -51,6 +51,19 @@ body.dark-mode {
   padding: 0;
 }
 
+.section {
+  padding: 3rem 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  padding: 3rem 1.5rem;
+  background-color: var(--clr-bg-card);
+  border-bottom: 1px solid var(--clr-border);
+  margin-bottom: 1.5rem;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--clr-bg-dark);
@@ -99,7 +112,7 @@ ul {
 }
 
 .section {
-  padding: var(--space-xl) 0;
+  padding: var(--space-lg) 0;
 }
 
 .section-title {
