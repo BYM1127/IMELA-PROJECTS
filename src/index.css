@@ -184,6 +184,11 @@ body.dark-mode .card {
   border-color: rgba(42, 157, 143, 0.3);
 }
 
+.portfolio-img-hover:hover + .image-overlay,
+.image-overlay:hover {
+  opacity: 1 !important;
+}
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }

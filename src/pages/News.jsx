@@ -10,9 +10,13 @@ const News = () => {
 
       <section className="section">
         <div className="container text-center" style={{marginBottom: '2rem'}}>
-          <p style={{fontSize: '1.1rem', color: 'var(--clr-text-muted)', maxWidth: '800px', margin: '0 auto'}}>
-            We are constantly taking on new and exciting challenges. Follow our official Facebook page below to see live updates from our active project sites, community announcements, and helpful tips for maintaining your electrical and network systems.
+          <p style={{fontSize: '1.1rem', color: 'var(--clr-text-muted)', maxWidth: '800px', margin: '0 auto', marginBottom: '1.5rem'}}>
+            We are constantly taking on new and exciting challenges. Follow our official Facebook and Instagram pages to see live updates from our active project sites, community announcements, and helpful tips.
           </p>
+          <a href="https://www.instagram.com/imelaprojects" target="_blank" rel="noreferrer" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '2rem' }}>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style={{ width: '24px', height: '24px' }} />
+            Follow @imelaprojects on Instagram
+          </a>
         </div>
         <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
           <div className="facebook-embed-container" style={{ width: '100%', maxWidth: '500px', backgroundColor: 'var(--clr-bg-card)', borderRadius: 'var(--border-radius)', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
