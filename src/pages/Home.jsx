@@ -7,7 +7,8 @@ const Home = () => {
     <div className="page animate-fade-in">
       {/* Hero Section */}
       <section className="hero">
-        <div className="container">
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+          <img src="/logo/logo-1.jpeg" alt="Imela Projects Main Logo" style={{ maxWidth: '300px', marginBottom: '2rem', borderRadius: '12px', boxShadow: 'var(--shadow-md)' }} className="animate-fade-in" />
           <h1 className="hero-title">Reliable Solutions for Your <span style={{color: 'var(--clr-accent)'}}>Home & Business.</span></h1>
           <p className="hero-subtitle">Friendly, professional Electrical, Solar & Network installations across Gauteng and surrounding provinces.</p>
           <div className="hero-cta">

@@ -13,6 +13,19 @@
   --clr-text-light: #FFFFFF; /* For text on dark/colored buttons */
   --clr-text-muted: #7F8C8D; /* Soft gray for secondary text */
   --clr-text-dark: #2C3E50; /* Deep slate for primary text */
+}
+
+body.dark-mode {
+  --clr-bg-dark: #121212;
+  --clr-bg-card: #1E1E1E;
+  --clr-bg-lighter: #2C2C2C;
+  --clr-text-muted: #aab6c2;
+  --clr-text-dark: #ffffff;
+  --shadow-sm: 0 4px 6px rgba(0,0,0,0.3);
+  --shadow-md: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+:root {
 
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
@@ -44,6 +57,7 @@ body {
   color: var(--clr-text-dark);
   line-height: 1.6;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,7 +171,11 @@ ul {
   border-radius: var(--border-radius);
   border: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-mode .card {
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card:hover {
