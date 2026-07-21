@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="footer-contact">
           <h3>Get in Touch</h3>
           <p><strong>Service Area:</strong> Gauteng, Free State, North West, Limpopo.</p>
-          <p><strong>Address:</strong> 123 Business Park, Midrand (Placeholder)</p>
+          <p><strong>Address:</strong> Mamello Street, Centurion, South Africa, 0187</p>
           <p><strong>CIPC Number:</strong> Pending</p>
           <br/>
           <p><strong>Mohau:</strong> <a href="tel:+27836025980">+27 83 602 5980</a></p>

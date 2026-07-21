@@ -30,7 +30,7 @@ const Contact = () => {
 
             <div>
               <h3 style={{color: 'var(--clr-accent)', marginBottom: '0.5rem'}}>Company Info</h3>
-              <p style={{color: 'var(--clr-text-muted)'}}>Address: 123 Business Park, Midrand (Placeholder)</p>
+              <p style={{color: 'var(--clr-text-muted)'}}>Address: Mamello Street, Centurion, South Africa, 0187</p>
               <p style={{color: 'var(--clr-text-muted)'}}>CIPC Number: Pending</p>
             </div>
 
