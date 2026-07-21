@@ -7,6 +7,11 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+body.dark-mode .navbar {
+  background-color: rgba(30, 30, 30, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .nav-container {
   display: flex;
   align-items: center;
