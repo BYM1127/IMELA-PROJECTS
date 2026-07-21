@@ -6,31 +6,31 @@ const Services = () => {
     {
       id: 1,
       title: "Electrical Installation & Maintenance",
-      description: "From new building wiring to routine maintenance of existing systems, our certified electricians ensure your property is safe and up to code.",
+      description: "From new building wiring to routine maintenance of existing systems, our certified electricians ensure your property is safe and up to code. We handle everything from minor repairs to large-scale commercial fit-outs, ensuring 100% compliance with South African safety standards.",
       icon: <Lightning size={48} className="text-primary" weight="light" />
     },
     {
       id: 2,
       title: "Network/Data Installation",
-      description: "Structured cabling and robust network setups for seamless connectivity in commercial spaces and modern homes.",
+      description: "Structured cabling and robust network setups for seamless connectivity in commercial spaces and modern homes. We design, install, and certify CAT6 and fiber optic networks to ensure your business operations run at lightning speed without interruptions.",
       icon: <WifiHigh size={48} className="text-primary" weight="light" />
     },
     {
       id: 3,
       title: "Access Point & Camera Installation",
-      description: "Enhance your security with professional installation of CCTV cameras and access control systems.",
+      description: "Enhance your security with professional installation of CCTV cameras and access control systems. We strategically place wireless access points and high-definition cameras to eliminate dead zones and secure your premises 24/7.",
       icon: <Camera size={48} className="text-primary" weight="light" />
     },
     {
       id: 4,
       title: "Backup Power Solutions",
-      description: "Uninterruptible power supplies (UPS), generators, and solar integrations to keep your operations running during outages.",
+      description: "Uninterruptible power supplies (UPS), generators, and solar integrations to keep your operations running during outages. We design bespoke backup solutions that guarantee peace of mind during load shedding or unexpected grid failures.",
       icon: <BatteryCharging size={48} className="text-primary" weight="light" />
     },
     {
       id: 5,
       title: "Earthing & Compliance",
-      description: "Ensuring all electrical systems meet regulatory safety standards through proper earthing and compliance checks.",
+      description: "Ensuring all electrical systems meet regulatory safety standards through proper earthing and compliance checks. We issue Certificates of Compliance (CoC) required for property sales and insurance purposes.",
       icon: <ShieldCheck size={48} className="text-primary" weight="light" />
     }
   ];

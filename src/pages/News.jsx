@@ -1,44 +1,31 @@
 const News = () => {
-  const newsItems = [
-    {
-      id: 1,
-      title: "Imela Projects Expands to Limpopo",
-      date: "May 12, 2026",
-      summary: "We are thrilled to announce that our top-tier electrical and networking services are now fully available in Limpopo, completing our coverage of four major provinces."
-    },
-    {
-      id: 2,
-      title: "New Solar and Backup Power Division Launched",
-      date: "March 28, 2026",
-      summary: "In response to the growing energy needs, we've launched a specialized division focusing entirely on residential and commercial backup power solutions."
-    },
-    {
-      id: 3,
-      title: "Achieved Master Electrician Certification",
-      date: "January 15, 2026",
-      summary: "Our lead technical team has successfully achieved the Master Electrician Certification, further guaranteeing the highest standard of safety and quality."
-    }
-  ];
-
   return (
     <div className="page animate-fade-in">
       <section className="page-header">
         <div className="container text-center">
-          <h1 className="hero-title">Latest News</h1>
-          <p className="hero-subtitle" style={{ margin: '0 auto' }}>Stay updated with Imela Projects.</p>
+          <h1 className="hero-title">Latest Updates</h1>
+          <p className="hero-subtitle" style={{ margin: '0 auto' }}>Stay connected with our latest projects and news.</p>
         </div>
       </section>
 
       <section className="section">
-        <div className="container">
-          <div className="services-list"> {/* Reusing grid layout */}
-            {newsItems.map(item => (
-              <div key={item.id} className="card" style={{ padding: '2rem' }}>
-                <h4 className="text-primary" style={{ marginBottom: '0.5rem' }}>{item.date}</h4>
-                <h2 style={{ marginBottom: '1rem' }}>{item.title}</h2>
-                <p>{item.summary}</p>
-              </div>
-            ))}
+        <div className="container text-center" style={{marginBottom: '2rem'}}>
+          <p style={{fontSize: '1.1rem', color: 'var(--clr-text-muted)', maxWidth: '800px', margin: '0 auto'}}>
+            We are constantly taking on new and exciting challenges. Follow our official Facebook page below to see live updates from our active project sites, community announcements, and helpful tips for maintaining your electrical and network systems.
+          </p>
+        </div>
+        <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
+          <div className="facebook-embed-container" style={{ width: '100%', maxWidth: '500px', backgroundColor: 'var(--clr-bg-card)', borderRadius: 'var(--border-radius)', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
+            <iframe 
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fimelaconstruction&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+              width="100%" 
+              height="800" 
+              style={{border: 'none', overflow: 'hidden'}} 
+              scrolling="no" 
+              frameBorder="0" 
+              allowFullScreen={true} 
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
           </div>
         </div>
       </section>
