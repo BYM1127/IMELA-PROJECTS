@@ -13,8 +13,15 @@ const Contact = () => {
           <div className="card" style={{display: 'flex', flexDirection: 'column', gap: '2rem', textAlign: 'center', padding: '4rem 2rem'}}>
             
             <div>
+              <p style={{fontSize: '1.1rem', color: 'var(--clr-text)', marginBottom: '1.5rem', fontWeight: '500'}}>
+                For the fastest response, please call or WhatsApp us directly!
+              </p>
+              
               <h3 style={{color: 'var(--clr-accent)', marginBottom: '0.5rem'}}>Mohau</h3>
-              <p style={{fontSize: '1.2rem', marginBottom: '0.2rem'}}><a href="tel:+27836025980">+27 83 602 5980</a></p>
+              <p style={{fontSize: '1.2rem', marginBottom: '0.2rem'}}>
+                <a href="tel:+27836025980" style={{marginRight: '10px'}}>📞 +27 83 602 5980</a>
+                <a href="https://wa.me/27836025980" target="_blank" rel="noreferrer" style={{color: '#25D366'}}>💬 WhatsApp</a>
+              </p>
               <p style={{color: 'var(--clr-text-muted)'}}><a href="mailto:sefadip@gmail.com">sefadip@gmail.com</a></p>
             </div>
 
@@ -22,7 +29,10 @@ const Contact = () => {
 
             <div>
               <h3 style={{color: 'var(--clr-accent)', marginBottom: '0.5rem'}}>Teboho</h3>
-              <p style={{fontSize: '1.2rem', marginBottom: '0.2rem'}}><a href="tel:0711729075">071 172 9075</a></p>
+              <p style={{fontSize: '1.2rem', marginBottom: '0.2rem'}}>
+                <a href="tel:0711729075" style={{marginRight: '10px'}}>📞 071 172 9075</a>
+                <a href="https://wa.me/27711729075" target="_blank" rel="noreferrer" style={{color: '#25D366'}}>💬 WhatsApp</a>
+              </p>
               <p style={{color: 'var(--clr-text-muted)'}}><a href="mailto:letselateboho@gmail.com">letselateboho@gmail.com</a></p>
             </div>
 
