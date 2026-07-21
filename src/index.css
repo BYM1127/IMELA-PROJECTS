@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap');
 
 :root {
-  /* Colors */
-  --clr-bg-dark: #121212;
-  --clr-bg-card: #1E1E1E;
-  --clr-bg-lighter: #2C2C2C;
+  /* Colors - Light Theme */
+  --clr-bg-dark: #F8F9FA; /* Changed to off-white for main background */
+  --clr-bg-card: #FFFFFF; /* Pure white for cards */
+  --clr-bg-lighter: #E9ECEF;
   
-  --clr-primary: #00B85C; /* Imela Bright Green */
-  --clr-primary-hover: #00964A;
-  --clr-accent: #E5A900; /* Imela Gold/Yellow */
+  --clr-primary: #2A9D8F; /* Soft, trustworthy Teal */
+  --clr-primary-hover: #21867a;
+  --clr-accent: #E76F51; /* Warm Coral accent */
   
-  --clr-text-light: #ffffff;
-  --clr-text-muted: #aab6c2;
-  --clr-text-dark: #071520; /* For text inside yellow buttons */
+  --clr-text-light: #FFFFFF; /* For text on dark/colored buttons */
+  --clr-text-muted: #7F8C8D; /* Soft gray for secondary text */
+  --clr-text-dark: #2C3E50; /* Deep slate for primary text */
 
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
@@ -26,10 +26,10 @@
   --space-xl: 6rem;
 
   /* Borders & Shadows */
-  --border-radius: 4px;
-  --shadow-sm: 0 2px 4px rgba(0,0,0,0.2);
-  --shadow-md: 0 4px 8px rgba(0,0,0,0.3);
-  --shadow-glow: 0 0 15px rgba(234, 255, 0, 0.3);
+  --border-radius: 12px; /* Softer, rounded corners */
+  --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
+  --shadow-md: 0 10px 20px rgba(0,0,0,0.08);
+  --shadow-glow: 0 4px 15px rgba(42, 157, 143, 0.3);
 }
 
 *, *::before, *::after {
@@ -41,7 +41,7 @@
 body {
   font-family: var(--font-body);
   background-color: var(--clr-bg-dark);
-  color: var(--clr-text-light);
+  color: var(--clr-text-dark);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -51,16 +51,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--space-sm);
+  color: var(--clr-text-dark);
 }
 
 a {
-  color: var(--clr-text-light);
+  color: var(--clr-primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--clr-primary);
+  color: var(--clr-accent);
 }
 
 ul {
@@ -128,14 +129,14 @@ ul {
 
 .btn-primary {
   background-color: var(--clr-primary);
-  color: var(--clr-text-dark);
+  color: var(--clr-text-light);
 }
 
 .btn-primary:hover {
   background-color: var(--clr-primary-hover);
   box-shadow: var(--shadow-glow);
   transform: translateY(-2px);
-  color: var(--clr-text-dark);
+  color: var(--clr-text-light);
 }
 
 .btn-outline {
@@ -146,7 +147,7 @@ ul {
 
 .btn-outline:hover {
   background-color: var(--clr-primary);
-  color: var(--clr-text-dark);
+  color: var(--clr-text-light);
 }
 
 /* Glassmorphism Cards */
@@ -154,14 +155,15 @@ ul {
   background-color: var(--clr-bg-card);
   padding: var(--space-md);
   border-radius: var(--border-radius);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(234, 255, 0, 0.2);
+  border-color: rgba(42, 157, 143, 0.3);
 }
 
 /* Animations */

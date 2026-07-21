@@ -3,8 +3,8 @@ const Contact = () => {
     <div className="page animate-fade-in">
       <section className="page-header">
         <div className="container text-center">
-          <h1 className="hero-title">Get In Touch</h1>
-          <p className="hero-subtitle" style={{ margin: '0 auto' }}>Efficient. Professional. Dependable.</p>
+          <h1 className="hero-title">Let's Connect</h1>
+          <p className="hero-subtitle" style={{ margin: '0 auto' }}>We're here to help with your next project.</p>
         </div>
       </section>
 

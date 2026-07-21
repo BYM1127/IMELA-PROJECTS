@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Warning, Clock, BatteryCharging, ArrowRight, ShieldCheck, Wrench, Lightbulb } from '@phosphor-icons/react';
+import { Warning, Clock, BatteryCharging, ArrowRight, ShieldCheck, Wrench, Lightbulb, Phone, WhatsappLogo } from '@phosphor-icons/react';
 import './Home.css';
 
 const Home = () => {
@@ -8,11 +8,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero">
         <div className="container">
-          <h1 className="hero-title">Where Expertise Meets <span style={{color: 'var(--clr-accent)'}}>Efficiency.</span></h1>
-          <p className="hero-subtitle">Electrical, Solar & Network Installation Solutions for residential and commercial properties in Midrand & Johannesburg.</p>
+          <h1 className="hero-title">Reliable Solutions for Your <span style={{color: 'var(--clr-accent)'}}>Home & Business.</span></h1>
+          <p className="hero-subtitle">Friendly, professional Electrical, Solar & Network installations across Gauteng and surrounding provinces.</p>
           <div className="hero-cta">
-            <Link to="/contact" className="btn btn-primary">Get a Quote</Link>
-            <Link to="/about#services" className="btn btn-outline">Our Services</Link>
+            <a href="tel:0711729075" className="btn btn-primary"><Phone size={24} weight="fill" /> Call Us Now</a>
+            <a href="https://wa.me/27836025980" target="_blank" rel="noreferrer" className="btn btn-outline" style={{backgroundColor: '#fff'}}><WhatsappLogo size={24} weight="fill" /> Message on WhatsApp</a>
           </div>
         </div>
       </section>
@@ -42,17 +42,20 @@ const Home = () => {
       <section className="section about-snippet bg-card">
         <div className="container about-grid">
           <div className="about-content">
-            <h4 className="text-primary">About Imela Projects</h4>
-            <h2 className="section-title">Speed, Precision, and Reliability.</h2>
+            <h4 className="text-primary">Welcome to Imela Projects</h4>
+            <h2 className="section-title">We're here to help.</h2>
             <p>
-              Imela Projects specializes in resolving all electrical and data-related issues with speed and precision. Our team of highly skilled and certified technicians is committed to delivering reliable, efficient solutions for all your electrical, solar, network, and data needs.
+              Let our friendly and highly skilled technicians handle your electrical and data needs. We pride ourselves on delivering safe, clean, and efficient solutions tailored specifically for you.
             </p>
             <ul className="feature-list">
               <li><ShieldCheck size={24} className="text-primary" /> Certified Professionals</li>
               <li><Wrench size={24} className="text-primary" /> Fast, Reliable Service</li>
               <li><Lightbulb size={24} className="text-primary" /> End-to-end Solutions</li>
             </ul>
-            <Link to="/about" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>Read More</Link>
+            <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
+              <Link to="/about" className="btn btn-primary">Discover More</Link>
+              <Link to="/contact" className="btn btn-outline">Reach Out Today</Link>
+            </div>
           </div>
           <div className="about-image">
             <img src="/portfolio/proj-5.jpeg" alt="Electricians at work" />

@@ -99,6 +99,20 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* CTA Banner */}
+      <section className="section bg-card" style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <div className="container">
+          <h2 className="section-title center" style={{marginBottom: '1rem'}}>Ready to start your project?</h2>
+          <p style={{fontSize: '1.2rem', color: 'var(--clr-text-muted)', marginBottom: '2rem'}}>
+            Reach out to our friendly team today. We're here to answer any questions and provide a free quote.
+          </p>
+          <div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap'}}>
+            <a href="tel:0711729075" className="btn btn-primary">Call Us Today</a>
+            <a href="https://wa.me/27836025980" target="_blank" rel="noreferrer" className="btn btn-outline">Message on WhatsApp</a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
