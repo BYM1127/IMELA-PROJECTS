@@ -34,7 +34,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'center' }}>
+          <div className="about-grid" style={{ gap: '2rem', alignItems: 'center' }}>
             <div className="about-image">
               <img src="/portfolio/proj-5.jpeg" alt="Imela Projects team at work" style={{width: '100%', borderRadius: 'var(--border-radius)'}} />
             </div>

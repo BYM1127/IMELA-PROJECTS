@@ -57,14 +57,14 @@ const Services = () => {
         <div className="container">
           <div className="services-list" style={{ display: 'grid', gap: '3rem' }}>
             {servicesData.map((service, index) => (
-              <div key={service.id} className="service-detail-card card" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', alignItems: 'center', flexDirection: index % 2 === 1 ? 'row-reverse' : 'row' }}>
-                <div style={{ position: 'relative', cursor: 'pointer', overflow: 'hidden', borderRadius: 'var(--border-radius)', boxShadow: 'var(--shadow-sm)' }} onClick={() => setActiveImage(service.image)}>
+              <div key={service.id} className="service-detail-card card" style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'center', flexDirection: index % 2 === 1 ? 'row-reverse' : 'row' }}>
+                <div style={{ position: 'relative', cursor: 'pointer', overflow: 'hidden', borderRadius: 'var(--border-radius)', boxShadow: 'var(--shadow-sm)', flex: '1 1 300px' }} onClick={() => setActiveImage(service.image)}>
                   <img src={service.image} alt={service.title} style={{ width: '100%', height: '300px', objectFit: 'cover', transition: 'transform 0.3s ease' }} className="portfolio-img-hover" />
                   <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0,0,0,0.3)', opacity: 0, transition: 'opacity 0.3s ease' }} className="image-overlay">
                     <ArrowsOut size={48} color="white" />
                   </div>
                 </div>
-                <div className="service-content">
+                <div className="service-content" style={{ flex: '1 1 300px' }}>
                   <div className="service-icon" style={{ marginBottom: '1rem' }}>{service.icon}</div>
                   <h2>{service.title}</h2>
                   <p>{service.description}</p>
