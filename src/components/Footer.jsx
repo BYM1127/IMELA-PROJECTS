@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Imela Projects. All rights reserved. | Fully implemented by BYMstudio</p>
+        <p>&copy; {new Date().getFullYear()} Imela Projects. All rights reserved. | created by BYMstudio</p>
       </div>
     </footer>
   );
