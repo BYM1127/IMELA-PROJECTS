@@ -45,7 +45,9 @@ const Footer = () => {
           <h3>Get in Touch</h3>
           <p><strong>Service Area:</strong> Gauteng, Free State, North West, Limpopo.</p>
           <p><strong>Address:</strong> Mamello Street, Centurion, South Africa, 0187</p>
-          <p><strong>CIPC Number:</strong> Pending</p>
+          <p><strong>Comp Reg:</strong> 2019/206430/07</p>
+          <p><strong>Tax Num:</strong> 9490197192</p>
+          <p><strong>Customer ID:</strong> NM01</p>
           <br/>
           <p><strong>Mohau:</strong> <a href="tel:+27836025980">+27 83 602 5980</a></p>
           <p><a href="mailto:sefadip@gmail.com">sefadip@gmail.com</a></p>

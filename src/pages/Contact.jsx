@@ -41,7 +41,9 @@ const Contact = () => {
             <div>
               <h3 style={{color: 'var(--clr-accent)', marginBottom: '0.5rem'}}>Company Info</h3>
               <p style={{color: 'var(--clr-text-muted)'}}>Address: Mamello Street, Centurion, South Africa, 0187</p>
-              <p style={{color: 'var(--clr-text-muted)'}}>CIPC Number: Pending</p>
+              <p style={{color: 'var(--clr-text-muted)'}}>Comp Reg: 2019/206430/07</p>
+              <p style={{color: 'var(--clr-text-muted)'}}>Tax Num: 9490197192</p>
+              <p style={{color: 'var(--clr-text-muted)'}}>Customer ID: NM01</p>
             </div>
 
             <hr style={{borderColor: 'rgba(255,255,255,0.1)', width: '50%', margin: '0 auto'}} />
